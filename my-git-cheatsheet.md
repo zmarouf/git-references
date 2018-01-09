@@ -2,7 +2,7 @@
 
 ----------------------------------------------------
 ## UNCOMMON BUT USEFUL COMMANDS
-----------------------------------------------------
+
 
 ### interactive rebase
 
@@ -25,7 +25,7 @@ Warning! You can lose code doing this.
 
 ----------------------------------------------------
 ## BRANCH HYGIENE
-----------------------------------------------------
+
 
 ### push a local only branch remote
 
@@ -66,20 +66,24 @@ git reset --hard origin/<branch_name>
 
 ----------------------------------------------------
 ## DEALING WITH REMOTE URLS
-----------------------------------------------------
+
 
 ### show all remote destinations and their URLs
 
 `git remote -v`
 
 
-## add a remote
+### add a remote
 
 `git remote add <remote_name> <url>`
 
-e.g.
+Example 1 (this git-references repository):
 
-`git remote add origin ssh://<username>@<serverurl>/foo`
+`git remote add origin git@github.com:crybx/git-references.git`
+
+Example 2 (foo.git on a Linux server):
+
+`git remote add origin ssh://<username>@<serverurl>/foo.git`
 
 
 ### remove a remote
@@ -94,7 +98,7 @@ e.g.
 
 ----------------------------------------------------
 ## GIT JUST INSTALLED - SETUP STEPS
-----------------------------------------------------
+
 
 ### check current user information
 

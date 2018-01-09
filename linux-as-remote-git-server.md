@@ -9,12 +9,12 @@ If your remote server is a Linux or Unix machine, the following information migh
 
 ## create a new remote only git repo
 
-To create a new repository named foo:
+To create a new repository named foo.git:
 
 ```
 cd /sccs/git
-mkdir foo
-cd foo
+mkdir foo.git
+cd foo.git
 git init --bare --shared=2664
 ```
 
@@ -25,15 +25,15 @@ git init --bare --shared=2664
 
 ## apply the above to an existing repository
 
-Assuming that foo already exists and we need to fix it, we can do the following:
+Assuming that foo.git already exists and we need to fix it, we can do the following:
 
 ```
-cd /sccs/git/foo
+cd /sccs/git/foo.git
 chgrp -R swdev *
 chmod -R ug+rws *
 ```
 
-Edit the file `/sccs/git/foo/config`.
+Edit the file `/sccs/git/foo.git/config`.
 
 Under the [core] area, add the following line:
 
@@ -46,7 +46,7 @@ Follow "create a new remote only git repo".
 
 In your local Git repo, add a new remote origin:
 
-`git remote add origin ssh://<username>@<serverurl>/sccs/git/foo`
+`git remote add origin ssh://<username>@<serverurl>/sccs/git/foo.git`
 
 Then push each of your branches to your new origin:
 
