@@ -4,7 +4,7 @@
 
 If you're using GitHub, GitLab, Visual Studio Team Services, TFS, or another service along those lines, none of this applies to you.
 
-If your remote server is a Linux or Unix machine, the following information might be useful.
+If you want your remote server to be a Linux or Unix machine, the following information might be useful.
 
 
 ## create a new remote only git repo

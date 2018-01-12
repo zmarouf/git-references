@@ -116,16 +116,18 @@ git config --global user.email "your.email@example.com"
 ```
 
 
-### check line ending setting
+### check line endings setting
 
 `git config core.autocrlf`
 
 
-### line endings
+### set line endings setting
 
 `git config core.autocrlf <true/false>`
 
 false means don't convert anything
+true is what you want if all work will be done on Windows
+I've read so much about git and line endings and I still get frustrated. I don't like any of the options.
 
 
 ### generate an SSH key
